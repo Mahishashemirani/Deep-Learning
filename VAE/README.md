@@ -17,8 +17,8 @@ The **Evidence Lower Bound (ELBO)** combines:
 Mathematically:
 
 $\mathcal{L} _ {recon} = \mathbb{E} _ {q(z\|x)}\left[ \log p(x\|z) \right]$  
-$\begin{align*} KL\left(q(z \mid x) \| \| p(z)\right) = \mathbb{E}_{q(z \mid x)}\left[\log \frac{q(z \mid x)}{p(z)}\right] \end{align*}$  
-$\begin{align*} ELBO = \mathcal{L} _ {recon} - KL\left(q(z \mid x) \| \| p(z)\right) \end{align*}$
+$KL\left(q(z \mid x) \| \| p(z)\right) = \mathbb{E}_{q(z \mid x)}\left[\log \frac{q(z \mid x)}{p(z)}\right]$  
+$ELBO = \mathcal{L} _ {recon} - KL\left(q(z \mid x) \| \| p(z)\right)$
 
 
 ---
