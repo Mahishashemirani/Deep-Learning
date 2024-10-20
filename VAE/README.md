@@ -13,11 +13,12 @@ A **Variational Autoencoder (VAE)** is a type of generative model that learns to
 ### 3. **Loss Function (ELBO)**
 The **Evidence Lower Bound (ELBO)** combines:
 1. **Reconstruction Loss**: Measures how well the decoder reconstructs the input.
-2. **KL Divergence**: Regularizes the latent space by penalizing the difference between the learned latent distribution and the prior distribution (usually $'\mathcal{N}(0, I)'$).
+2. **KL Divergence**: Regularizes the latent space by penalizing the difference between the learned latent distribution and the prior distribution (usually $'\mathcal{N}(0, I)'$).  
 Mathematically:
 
 $\mathcal{L} _ {recon} = \mathbb{E} _ {q(z\|x)}\left[ \log p(x\|z) \right]$  
 $KL\left(q(z \mid x) \, \| \, p(z)\right) = \mathbb{E}_{q(z \mid x)}\left[\log \frac{q(z \mid x)}{p(z)}\right]$
+$ELBO = \mathcal{L} _ {recon} - KL\left(q(z \mid x) \, \| \, p(z)\right)$
 ---
 
 ## 🌟 Why VAEs?
