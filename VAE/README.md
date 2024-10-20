@@ -17,7 +17,7 @@ The **Evidence Lower Bound (ELBO)** combines:
 Mathematically:
 
 $\mathcal{L} _ {recon} = \mathbb{E} _ {q(z\|x)}\left[ \log p(x\|z) \right]$  
-$ KL(q(z\|x) \|| p(z)) =  \mathbb{E} _ {q(z\|x)}\left[ \log \frac{q(z\|x)} {p(z)} \right]$
+$KL\left(q(z \mid x) \, \| \, p(z)\right) = \mathbb{E}_{q(z \mid x)}\left[\log \frac{q(z \mid x)}{p(z)}\right]$
 ---
 
 ## 🌟 Why VAEs?
