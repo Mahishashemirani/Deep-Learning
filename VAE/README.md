@@ -16,8 +16,8 @@ The **Evidence Lower Bound (ELBO)** combines:
 2. **KL Divergence**: Regularizes the latent space by penalizing the difference between the learned latent distribution and the prior distribution (usually $'\mathcal{N}(0, I)'$).
 Mathematically:
 
-$\mathcal{L} _ {recon} = \mathbb{E} _ {q(z\|x)}\left[ \log p(x\|z) \right]$
-$ KL(q(z\|x) \|| p(z)) =  \mathbb{E} _ {q(z\|x)}\left[ \log \frac{q(z\|x)}{p(z)} \right]$
+$\mathcal{L} _ {recon} = \mathbb{E} _ {q(z\|x)}\left[ \log p(x\|z) \right]$  
+$ KL(q(z\|x) \|| p(z)) =  \mathbb{E} _ {q(z\|x)}\left[ \log \frac{q(z\|x)} {p(z)} \right]$
 ---
 
 ## 🌟 Why VAEs?
