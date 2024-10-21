@@ -42,19 +42,19 @@ $\min _ G \max _ D \mathbb{E} _ {x \sim p _ {\text{data}}(x)} [\log D(x)] + \mat
 
 ### Explanation
 
-- $\(x \sim p _ {\text{data}}(x)\)$ : Samples drawn from the real data distribution.
-- $\(z \sim p _ z(z)\)$ : Noise sampled from a latent distribution (e.g., Gaussian or Uniform).
-- $\(D(x)\)$: Probability that the Discriminator classifies \(x\) as real.
-- $\(D(G(z))\)$: Probability that the Discriminator classifies the generated data \(G(z)\) as real.
+- $x \sim p _ {\text{data}}(x)$ : Samples drawn from the real data distribution.
+- $z \sim p _ z(z)$ : Noise sampled from a latent distribution (e.g., Gaussian or Uniform).
+- $D(x)$: Probability that the Discriminator classifies \(x\) as real.
+- $D(G(z))$: Probability that the Discriminator classifies the generated data \(G(z)\) as real.
 
 ### Training Procedure
 
 1. **Discriminator Update**:
-   - Maximize \( \log D(x) \) for real data.
-   - Maximize \( \log (1 - D(G(z))) \) for generated data.
+   - Maximize $\log D(x)$ for real data.
+   - Maximize $\log (1 - D(G(z)))$ for generated data.
 
 2. **Generator Update**:
-   - Minimize \( \log (1 - D(G(z))) \), or equivalently, maximize \( \log D(G(z)) \).
+   - Minimize $\log (1 - D(G(z))) $, or equivalently, maximize \( \log D(G(z)) \).
 
 
 ---
