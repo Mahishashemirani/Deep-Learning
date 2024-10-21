@@ -31,14 +31,31 @@ These two models are trained simultaneously in a **zero-sum game**: the Generato
 2. **Step 2**: Train the Generator to produce data that can fool the Discriminator.
 3. **Step 3**: Repeat the above steps iteratively until the Generator creates data indistinguishable from real data.
 
-**Loss Functions**:
-- **Discriminator Loss**: 
+## Min-Max Optimization Scheme of GAN
 
-  $\mathcal{L}_D = -\mathbb{E}_{x \sim p_{\text{data}}} [\log D(x)] - \mathbb{E}_{z \sim p(z)} [\log (1 - D(G(z)))]$
-  
-- **Generator Loss**:
+The training of a GAN involves a **min-max game** between the Generator \(G\) and the Discriminator \(D\). The goal of the Discriminator is to correctly classify real and fake data, while the Generator aims to produce fake data that can fool the Discriminator.
 
-  $\mathcal{L}_G = -\mathbb{E}_{z \sim p(z)} [\log D(G(z))]$
+
+The **optimization problem** is given by:
+
+$\min _ G \max _ D \mathbb{E} _ {x \sim p _ {\text{data}}(x)} [\log D(x)] + \mathbb{E} _ {z \sim p _ z(z)} [\log (1 - D(G(z)))]$
+
+### Explanation
+
+- \(x \sim p_{\text{data}}(x)\): Samples drawn from the real data distribution.
+- \(z \sim p_z(z)\): Noise sampled from a latent distribution (e.g., Gaussian or Uniform).
+- \(D(x)\): Probability that the Discriminator classifies \(x\) as real.
+- \(D(G(z))\): Probability that the Discriminator classifies the generated data \(G(z)\) as real.
+
+### Training Procedure
+
+1. **Discriminator Update**:
+   - Maximize \( \log D(x) \) for real data.
+   - Maximize \( \log (1 - D(G(z))) \) for generated data.
+
+2. **Generator Update**:
+   - Minimize \( \log (1 - D(G(z))) \), or equivalently, maximize \( \log D(G(z)) \).
+
 
 ---
 
