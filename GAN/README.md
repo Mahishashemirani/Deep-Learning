@@ -42,10 +42,10 @@ $\min _ G \max _ D \mathbb{E} _ {x \sim p _ {\text{data}}(x)} [\log D(x)] + \mat
 
 ### Explanation
 
-- \(x \sim p_{\text{data}}(x)\): Samples drawn from the real data distribution.
-- \(z \sim p_z(z)\): Noise sampled from a latent distribution (e.g., Gaussian or Uniform).
-- \(D(x)\): Probability that the Discriminator classifies \(x\) as real.
-- \(D(G(z))\): Probability that the Discriminator classifies the generated data \(G(z)\) as real.
+- $\(x \sim p _ {\text{data}}(x)\)$ : Samples drawn from the real data distribution.
+- $\(z \sim p _ z(z)\)$ : Noise sampled from a latent distribution (e.g., Gaussian or Uniform).
+- $\(D(x)\)$: Probability that the Discriminator classifies \(x\) as real.
+- $\(D(G(z))\)$: Probability that the Discriminator classifies the generated data \(G(z)\) as real.
 
 ### Training Procedure
 
