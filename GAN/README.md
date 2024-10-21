@@ -106,4 +106,18 @@ Below is the plot showing the accuracy of the Discriminator for both real and fa
 
 *Note: This plot complements the loss plot by providing a more nuanced view of the adversarial dynamics between the Generator and Discriminator.*
 
+## Monitoring Generated Output During Training
 
+One of the most reliable ways to assess the progress of a GAN is by **visualizing the generated outputs periodically throughout training**. Unlike loss curves or accuracy metrics, direct inspection of the generated samples provides a clear sense of the Generator’s performance. Early in the training process, the outputs may appear noisy or lack meaningful structure, but as training progresses, the Generator should start producing increasingly realistic samples. 
+
+Monitoring the evolution of these outputs over epochs can reveal important insights:
+1. **Visual Quality**: Improvements in clarity, sharpness, or fidelity of generated samples.
+2. **Mode Collapse Detection**: If the Generator outputs the same or very similar images over multiple epochs, it may indicate **mode collapse**.
+3. **Training Instability**: Significant changes in the quality of generated samples between epochs may indicate instability in the adversarial dynamics.
+4. **Diversity**: In addition to realism, the samples should show diversity to confirm that the Generator is learning the full data distribution.
+
+Below is an animation showing the progression of the generated outputs over the course of training:
+
+![Generated Output Animation](plots/animation.gif)
+
+*Note: Watching the gradual improvement of generated samples provides a more intuitive understanding of GAN performance than metrics alone.*
