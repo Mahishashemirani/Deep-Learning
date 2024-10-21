@@ -57,15 +57,6 @@ $\min _ G \max _ D \mathbb{E} _ {x \sim p _ {\text{data}}(x)} [\log D(x)] + \mat
    - Minimize $\log (1 - D(G(z))) $, or equivalently, maximize \( \log D(G(z)) \).
 
 
----
-
-## Applications
-
-- **Image Generation**: Generate photorealistic images (e.g., DeepFake, face synthesis).
-- **Super-Resolution**: Improve image resolution (e.g., SRGAN).
-- **Image-to-Image Translation**: Convert images from one domain to another (e.g., CycleGAN for style transfer).
-- **Text-to-Image Synthesis**: Generate images from text descriptions (e.g., DALL-E).
-- **Music Generation**: Create new audio tracks.
 
 ---
 
@@ -75,5 +66,44 @@ $\min _ G \max _ D \mathbb{E} _ {x \sim p _ {\text{data}}(x)} [\log D(x)] + \mat
 - **Vanishing Gradients**: The Generator receives weak feedback from the Discriminator.
 - **Training Instability**: GANs can be difficult to train and require careful tuning of hyperparameters.
 - **Non-convergence**: The models may never reach equilibrium if poorly designed.
+
+## Why GAN Loss Plots Are Often Misleading
+
+When training GANs, it’s common to monitor the **loss plots** for the Generator and Discriminator. However, these plots alone may not provide useful insights due to the following reasons:
+
+1. **Adversarial Nature of GANs**:
+   - GAN training is a **two-player game** between the Generator and Discriminator. Ideally, they converge to a Nash equilibrium, but the losses do not indicate when or if this has happened.
+
+2. **Non-stationary Loss**:
+   - The Generator and Discriminator are continuously improving against each other, meaning that the loss values fluctuate even when the model is making progress.
+
+3. **Mode Collapse**:
+   - Even if the Generator loss decreases, it might be producing limited variations (mode collapse), leading to poor output quality.
+
+
+Below is the loss plot for the GAN training. It illustrates the fluctuating nature of both the Generator and Discriminator losses.
+
+![GAN Loss Plot](plots/GAN_Loss.png)
+
+*Note: Even if the losses seem unstable, it is important to evaluate the generated outputs for a proper assessment.*
+
+## Monitoring Discriminator Accuracy for Real and Fake Images
+
+In addition to tracking loss, monitoring the **Discriminator’s accuracy** for both real and fake images offers deeper insights into the GAN’s training dynamics. The Discriminator's task is to correctly classify real images as **real** and generated (fake) images as **fake**. However, similar to the loss curves, the accuracy values can be **non-monotonic and oscillatory**. A few key patterns to consider:
+
+1. **Discriminator Saturation**: 
+   - If the accuracy for real images stays close to 100% while the accuracy for fake images remains very low, it indicates that the Discriminator is overpowering the Generator, leading to **vanishing gradients** and potentially stalling the Generator’s progress.
+
+2. **Balanced Performance**:
+   - Ideally, both the real and fake image accuracies should hover around **50%** at equilibrium, indicating that the Generator has become effective at producing realistic samples that the Discriminator struggles to classify.
+
+3. **Fluctuations and Training Instability**:
+   - Fluctuating accuracies are common and expected in GAN training. Large gaps between the accuracies of real and fake images may indicate that the Generator or Discriminator is learning too quickly compared to the other, requiring adjustments to the learning rates.
+
+Below is the plot showing the accuracy of the Discriminator for both real and fake images over the course of training.
+
+![Discriminator Accuracy Plot](plots/Accuracy.png)
+
+*Note: This plot complements the loss plot by providing a more nuanced view of the adversarial dynamics between the Generator and Discriminator.*
 
 
