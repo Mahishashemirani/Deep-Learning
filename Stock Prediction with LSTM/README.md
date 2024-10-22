@@ -52,7 +52,7 @@ As training progresses, several patterns may emerge:
 
 Below is a GIF showing how the LSTM’s predictions improve over epochs, offering a visual representation of the model's learning progress:
 
-![LSTM Predictions over Epochs](plots/lstm_prediction.gif)
+![LSTM Predictions over Epochs](plots/lstm_predictions.gif)
 
 
 ## Visualization of Predictions
