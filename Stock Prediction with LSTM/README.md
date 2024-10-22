@@ -15,7 +15,7 @@ This project demonstrates how LSTM networks can be used to predict stock prices 
    - Create **rolling windows** of past data to feed into the LSTM for prediction. 
 
 2. **LSTM Model Architecture**  
-   - Input: Sequence of stock prices over a window (8 days).
+   - **Input**: Sequence of stock prices over a window (8 days). For this project, we used **Gold price data** from **2020 to 2024** to train the LSTM model. The historical gold prices were divided into **rolling windows**, allowing the model to learn sequential dependencies and predict future prices based on past trends. Each window serves as input, with the corresponding next time step used as the target.
    - **Hidden Layers**: LSTM layers to capture temporal dependencies.
    - **Output Layer**: A dense layer that predicts the stock price for the next time step.
 
