@@ -34,13 +34,13 @@ MSE = (1/n) * Σ(yᵢ - ŷᵢ)²
 
 The latent space of an autoencoder represents how the model encodes data into a lower-dimensional form. During training, the model learns to group similar images (e.g., handwritten digits) closer together in the latent space. We can visualize this space using t-SNE or PCA to observe how the autoencoder learns to organize the data.
 
-The following animation illustrates how the latent space evolves over training epochs, using t-SNE for dimensionality reduction. As the model trains, the separation between different digit classes becomes more defined.
+The following picture illustrates how the latent space evolves over training epochs, using t-SNE for dimensionality reduction. As the model trains, the separation between different digit classes becomes more defined.
 
-!Figure: Latent space evolution visualized using t-SNE.
+![TSNE Plot](plots/TSNE.png)
 
 ## Generative Power of the Model
 
-OAfter training, the autoencoder can generate new images by sampling from the learned latent space. The animation below shows how the model's reconstruction improves as training progresses. Each epoch produces better image quality and more recognizable digits as the model becomes proficient at encoding and decoding.
+After training, the autoencoder can generate new images by sampling from the learned latent space. The animation below shows how the model's reconstruction improves as training progresses. Each epoch produces better image quality and more recognizable digits as the model becomes proficient at encoding and decoding.
 
 
 
