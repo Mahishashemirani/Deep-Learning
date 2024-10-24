@@ -8,7 +8,9 @@ An **Autoencoder** is a neural network designed to learn efficient representatio
 - **Decoder**: Reconstructs the original image from the 32-dimensional latent space.
   
 ### 2. **Loss Function**
-- The training process minimizes Mean Squared Error (MSE), which measures the difference between the input and its reconstruction:.
+- The training process minimizes Mean Squared Error (MSE), which measures the difference between the input and its reconstruction:
+
+
 MSE = (1/n) * Σ(yᵢ - ŷᵢ)²
 
 
