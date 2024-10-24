@@ -10,6 +10,7 @@ An **Autoencoder** is a neural network designed to learn efficient representatio
 ### 2. **Loss Function**
 - The training process minimizes Mean Squared Error (MSE), which measures the difference between the input and its reconstruction:.
 
+![Loss Plot](autoencoder/plots/losses.png)
 
 
 ---
