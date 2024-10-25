@@ -61,12 +61,10 @@ The gradient norms during training provide insights into the stability and effic
 
 This visualization helps assess the model's ability to track trends in timber growth over time, illustrating the predictions against the actual values in the dataset.
 
-![Predicted vs Actual Prices](plots/prediction%20vs.%20true.png)
+![Predicted vs Actual Prices](plots/visualization.png)
 
 ## 🔚 Conclusion
 
 This project highlights the application of Neural ODEs in forecasting timber growth and determining optimal rotation ages. The insights gained from this model can significantly aid in forestry management, optimizing harvest times for economic sustainability.
 
-## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
