@@ -1,10 +1,10 @@
-# Optimal Rotation Age Prediction using Neural ODE
+# 🌲 Optimal Rotation Age Prediction using Neural ODE
 
 ## Introduction
 
 Neural Ordinary Differential Equations (Neural ODEs) are a powerful tool for modeling continuous-time dynamical systems. This project demonstrates how Neural ODEs can be utilized to predict the optimal rotation age for timber growth, focusing on maximizing the Net Present Value (NPV) from timber sales. By capturing the underlying dynamics of timber growth through time, this model provides valuable insights for forestry management and decision-making.
 
-## Workflow
+## 🔄 Workflow
 
 1. **Data Simulation**  
    - Generate synthetic data representing timber growth over time using a specified growth function.
@@ -27,7 +27,7 @@ Neural Ordinary Differential Equations (Neural ODEs) are a powerful tool for mod
 
 ---
 
-## Loss Function in Neural ODE for Timber Growth Prediction
+## 📉 Loss Function in Neural ODE for Timber Growth Prediction
 
 The **loss function** plays a crucial role in training the Neural ODE model, quantifying the discrepancy between predicted and actual timber volumes. For this project, we employ the **Mean Squared Error (MSE)** loss function, which calculates the average squared difference between the predicted and actual values. MSE is particularly suitable for regression tasks like timber growth prediction, as it heavily penalizes larger errors, prompting the model to minimize significant deviations.
 
@@ -35,7 +35,7 @@ During the training process, the Neural ODE model aims to minimize the MSE by ad
 
 Below is the plot showing the loss function over the course of training:
 
-![Loss Function Plot](plots/Loss_Function_Plot.png)
+![Training Loss Plot](plots/training_loss.png)
 
 ## Training Procedure of Neural ODE and Observed Patterns
 
@@ -49,13 +49,19 @@ As training continues, several patterns may be observed:
 
 Below is a plot comparing the **predicted growth vs actual growth** over time, offering a visual representation of the model's performance:
 
-![Predicted vs Actual Growth](plots/Predicted_vs_Actual.png)
+![Predicted vs Actual Growth](plots/prediction vs. true.png)
+
+## 📊 Gradient Norms Over Training Epochs
+
+The gradient norms during training provide insights into the stability and efficiency of the learning process. Below is a plot showing the gradient norms over the training epochs, indicating how the model's learning dynamics evolved:
+
+![Gradient Norms Plot](plots/gradient norms.png)
 
 ## Visualization of Predictions
 
 This visualization helps assess the model's ability to track trends in timber growth over time, illustrating the predictions against the actual values in the dataset.
 
-![Predicted vs Actual Prices](plots/LSTM_final_predictions.png)
+![Predicted vs Actual Prices](plots/prediction vs. true.png)
 
 ## Conclusion
 
