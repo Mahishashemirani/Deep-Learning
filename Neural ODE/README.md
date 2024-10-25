@@ -1,6 +1,6 @@
-# 🌲 Optimal Rotation Age Prediction using Neural ODE
+# Optimal Rotation Age Prediction using Neural ODE🌲 
 
-## Introduction
+## 📖 Introduction
 
 Neural Ordinary Differential Equations (Neural ODEs) are a powerful tool for modeling continuous-time dynamical systems. This project demonstrates how Neural ODEs can be utilized to predict the optimal rotation age for timber growth, focusing on maximizing the Net Present Value (NPV) from timber sales. By capturing the underlying dynamics of timber growth through time, this model provides valuable insights for forestry management and decision-making.
 
@@ -35,9 +35,9 @@ During the training process, the Neural ODE model aims to minimize the MSE by ad
 
 Below is the plot showing the loss function over the course of training:
 
-![Training Loss Plot](plots/training loss.png)
+![Training Loss Plot](plots/training%20loss.png)
 
-## Training Procedure of Neural ODE and Observed Patterns
+## 🏋️ Training Procedure of Neural ODE and Observed Patterns
 
 Training a **Neural ODE for timber growth prediction** involves feeding sequential data into the model, adjusting its internal states, and updating weights via backpropagation. Throughout each epoch, the model processes batches of time windows to predict future growth based on historical data. The **Adam optimizer** facilitates effective learning by minimizing the loss function. Initially, predictions may seem erratic as the model struggles to grasp the underlying patterns.
 
@@ -49,22 +49,24 @@ As training continues, several patterns may be observed:
 
 Below is a plot comparing the **predicted growth vs actual growth** over time, offering a visual representation of the model's performance:
 
-![Predicted vs Actual Growth](plots/prediction vs. true.png)
+![Predicted vs Actual Growth](plots/prediction%20vs.%20true.png)
 
 ## 📊 Gradient Norms Over Training Epochs
 
 The gradient norms during training provide insights into the stability and efficiency of the learning process. Below is a plot showing the gradient norms over the training epochs, indicating how the model's learning dynamics evolved:
 
-![Gradient Norms Plot](plots/gradient norms.png)
+![Gradient Norms Plot](plots/gradient%20norms.png)
 
-## Visualization of Predictions
+## 📈 Visualization of Predictions
 
 This visualization helps assess the model's ability to track trends in timber growth over time, illustrating the predictions against the actual values in the dataset.
 
-![Predicted vs Actual Prices](plots/prediction vs. true.png)
+![Predicted vs Actual Prices](plots/prediction%20vs.%20true.png)
 
-## Conclusion
+## 🔚 Conclusion
 
 This project highlights the application of Neural ODEs in forecasting timber growth and determining optimal rotation ages. The insights gained from this model can significantly aid in forestry management, optimizing harvest times for economic sustainability.
 
+## 📜 License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
