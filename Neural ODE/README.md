@@ -35,7 +35,7 @@ During the training process, the Neural ODE model aims to minimize the MSE by ad
 
 Below is the plot showing the loss function over the course of training:
 
-![Training Loss Plot](plots/training_loss.png)
+![Training Loss Plot](plots/training loss.png)
 
 ## Training Procedure of Neural ODE and Observed Patterns
 
