@@ -11,7 +11,7 @@ Over the past two decades, deep learning has advanced rapidly, continuously push
 This repository serves as a comprehensive resource for various deep learning topics, each linked to corresponding notebooks or scripts. The topics include:
 
 ### Classification Tasks 🎯
-- **Twin Network**: A network architecture designed for complex, supervised learning tasks, often used for similarity learning.
+- [**Twin Network**] (./Siamese%20Neural%20Network): A network architecture designed for complex, supervised learning tasks, often used for similarity learning.
 
 ### Generative Models 🎨
 - **Autoencoders**: A foundational unsupervised learning model for dimensionality reduction and feature extraction.
