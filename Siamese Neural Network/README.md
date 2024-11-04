@@ -55,9 +55,9 @@ $$
 $$
 
 Where:
-- \( Y \): Label (`0` for similar pairs, `1` for dissimilar pairs).
-- \( D_w \): Distance between image embeddings.
-- \( m \): Margin parameter, ensuring dissimilar pairs maintain a minimum distance.
+- $\( Y \)$: Label (`0` for similar pairs, `1` for dissimilar pairs).
+- $\( D_w \)$: Distance between image embeddings.
+- $\( m \)$: Margin parameter, ensuring dissimilar pairs maintain a minimum distance.
 
 ---
 
@@ -93,7 +93,7 @@ This plot shows the **accuracy** on the validation dataset, reflecting the netwo
 
 ## 🔍 Visualizing Embeddings
 
-Visualizing the **image embeddings** produced by the network helps us understand how effectively it separates similar and dissimilar images in the feature space. Below is an example of a **2D projection** of the embeddings using techniques like **t-SNE** or **PCA**:
+Visualizing the **image embeddings** produced by the network helps us understand how effectively it separates similar and dissimilar images in the feature space. Below is an example of a **2D projection** of the embeddings using techniques like **t-SNE**:
 
 ![Embedding Plot](Plots/Embedding.png)
 
