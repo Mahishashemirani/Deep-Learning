@@ -11,12 +11,12 @@ Over the past two decades, deep learning has advanced rapidly, continuously push
 This repository serves as a comprehensive resource for various deep learning topics, each linked to corresponding notebooks or scripts. The topics include:
 
 ### Classification Tasks 🎯
-- [**Twin Network**](./Siamese%20Neural%20Network): A network architecture designed for complex, supervised learning tasks, often used for similarity learning.
+- [**Twin Networks**](./Siamese%20Neural%20Network): A network architecture designed for complex, supervised learning tasks, often used for similarity learning.
 
 ### Generative Models 🎨
 - **Autoencoders**: A foundational unsupervised learning model for dimensionality reduction and feature extraction.
-- **GANs**: Generative Adversarial Networks, a more complex unsupervised learning model for generating realistic data samples.
-- **VAEs**: Variational Autoencoders, an unsupervised learning approach that combines generative modeling with probabilistic inference.
+- [**GANs**](./GAN): Generative Adversarial Networks, a more complex unsupervised learning model for generating realistic data samples.
+- [**VAEs**](./VAE): Variational Autoencoders, an unsupervised learning approach that combines generative modeling with probabilistic inference.
 
 ### Time Series Forecasting 📈
 - **Stock Prediction with LSTM**: Long Short-Term Memory networks designed for sequential data, applied here to predict stock prices over time.
