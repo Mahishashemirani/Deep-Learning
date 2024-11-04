@@ -11,7 +11,7 @@ An **Autoencoder** is a neural network designed to learn efficient representatio
 - The training process minimizes Mean Squared Error (MSE), which measures the difference between the input and its reconstruction:
 
 
-MSE = (1/n) * Σ(yᵢ - ŷᵢ)²
+$MSE = \frac{1}{n} \sum_{i=1}^{n}(y_i - \hat{y}_i)^2$
 
 
 ---
