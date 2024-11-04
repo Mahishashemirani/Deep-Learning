@@ -2,7 +2,7 @@
 
 ## Introduction to Deep Learning
 
-Deep learning has revolutionized the field of machine learning by enabling models to learn complex patterns and representations in data. At the core of deep learning are **neural networks**, which act as powerful universal approximators, capable of modeling virtually any function given sufficient data and complexity. Unlike classical machine learning models, neural networks leverage a **large number of parameters** and layers, allowing them to learn and incorporate **nonlinear relationships** effectively. This unique capability enables deep networks to tackle challenging tasks in image, text, and sequential data with remarkable performance.
+Deep learning has revolutionized the field of machine learning by enabling models to learn complex patterns and representations in data. At the core of deep learning are **neural networks**, which act as powerful [universal approximators](https://en.wikipedia.org/wiki/Universal_approximation_theorem), capable of modeling virtually any function given sufficient data and complexity. Unlike classical machine learning models, neural networks leverage a **large number of parameters** and layers, allowing them to learn and incorporate **nonlinear relationships** effectively. This unique capability enables deep networks to tackle challenging tasks in image, text, and sequential data with remarkable performance.
 
 Over the past two decades, deep learning has advanced rapidly, continuously pushing the boundaries of what is possible in machine learning. It consistently outperforms traditional approaches across a wide array of applications, from image classification and speech recognition to natural language processing and time-series analysis.
 
