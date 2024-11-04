@@ -14,7 +14,7 @@ This repository serves as a comprehensive resource for various deep learning top
 - [**Twin Networks**](./Siamese%20Neural%20Network): A network architecture designed for complex, supervised learning tasks, often used for similarity learning.
 
 ### Generative Models 🎨
-- [**Autoencoders**](./Autoencoders): A foundational unsupervised learning model for dimensionality reduction and feature extraction.
+- [**Autoencoders**](./Autoencoder): A foundational unsupervised learning model for dimensionality reduction and feature extraction.
 - [**GANs**](./GAN): Generative Adversarial Networks, a more complex unsupervised learning model for generating realistic data samples.
 - [**VAEs**](./VAE): Variational Autoencoders, an unsupervised learning approach that combines generative modeling with probabilistic inference.
 
